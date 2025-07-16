@@ -1,6 +1,12 @@
-const Button: React.FC = () =>{
+import { ButtonProps } from "@/interfaces";
+const Button: React.FC <ButtonProps>= ({title,styles}) =>{
 return(
-   <button className="text-sm rounded-full"></button> 
+   <div>
+            <p className=" text-sm ">{title}</p>
+            <p className=" text-m ">{title}</p>
+            <p className=" text-l ">{title}</p>
+
+   </div>
 )
 }
 export default Button;
